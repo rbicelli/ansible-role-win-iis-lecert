@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: win_iis_lecert
+  role_name: ar_win_iis_lecert
   author: Riccardo Bicelli
   description: Install Letsencrypt Certificates on IIS
   license: GPL
