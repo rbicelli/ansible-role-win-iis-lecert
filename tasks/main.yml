@@ -1,0 +1,15 @@
+
+---
+- name: Copy Certificate
+  win_copy:
+    src: "/etc/letsencrypt/live/{{ cert_name }}/cert.pfx"
+    dest: "%TEMP%\\{{ cert_name }}.pfx"
+
+- name: Copy Powershell Binding Template
+  win_template:
+    src: update-cert.ps1.j2
+    dest: "%TEMP%\\update-cert.ps1"
+
+- name: Bind Certificate
+  win_command:
+    cmd /C cd %TEMP% && powershell.exe -ExecutionPolicy ByPass -File update-cert.ps1
