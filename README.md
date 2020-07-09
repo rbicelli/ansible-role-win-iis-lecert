@@ -1,4 +1,4 @@
-# ansible-role-win-iis-lecert
+# ansible_role_win_iis_lecert
 
 Ansible Role for deploying Letsencrypt certificates stored on Ansible host to IIS
 
@@ -6,15 +6,15 @@ By Riccardo Bicelli <r.bicelli@gmail.com>, Licensed under GNU GPL 3
 
 ## Example Playbook
 
-``
-- hosts: iis_servers
+`
+- hosts: win_iis_servers
   become: yes
   vars:
     virtual: yes
     cert_name: my-issued-le-cert.example.com
   roles:
-    - role: ansible-role-win-iis-lecert
-``
+    - role: ansible_role_win-iis_lecert
+`
 
 ## Available variables
 
