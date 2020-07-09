@@ -13,7 +13,7 @@ By Riccardo Bicelli <r.bicelli@gmail.com>, Licensed under GNU GPL 3
     virtual: yes
     cert_name: my-issued-le-cert.example.com
   roles:
-    - role: ansible_role_win-iis_lecert
+    - role: ar_win_iis_lecert
 ```
 
 ## Available variables
