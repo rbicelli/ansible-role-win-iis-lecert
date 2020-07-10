@@ -19,7 +19,7 @@ By Riccardo Bicelli <r.bicelli@gmail.com>, Licensed under GNU GPL 3
 ## Available variables
 
 | Variable Name  | Explaination                        | Default Value    |
-| :------------- | :----------------------------------:| ----------------:|
+| :------------- | :-----------------------------------|:-----------------|
 |  cert_name     | name of main domain of LE Cert      | Mandatory        |
 |  iis_site      | IIS Web site name                   | Default Web Site |
 |  http_address  | HTTP address of site is bound to    | 0.0.0.0          |
